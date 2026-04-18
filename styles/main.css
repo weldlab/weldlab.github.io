@@ -1,0 +1,37 @@
+:root {
+  --accent: #4c70eb;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  background: black;
+  color: white;
+  font-family: monospace;
+}
+
+h1, h2 {
+  font-size: 1.62rem;
+}
+a {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+.container {
+  width: 80ch;
+  margin: auto;
+  padding: 1rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.62rem;
+  background: var(--accent);
+  box-shadow: 0 0 0 100vw var(--accent);
+  clip-path: inset(0 -100vw);
+}
+.header a {
+  color: white;
+}
