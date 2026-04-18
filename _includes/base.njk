@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <link rel="stylesheet" href="/styles/main.css">
+    <title>{{ title if title else page.fileSlug }} | Сварочная Лаборатория КубГТУ</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1>{{ title if title else page.fileSlug }}</h1>
+      <div class="header__links">
+        <a href="/">Главная</a>
+        <a href="/about">О нас</a>
+        <a href="/license"></a>
+      </div>
+    </header>
+    <main class="container">
+      {{ content | safe }}
+    </main>
+  </body>
+</html>
