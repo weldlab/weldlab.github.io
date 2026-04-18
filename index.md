@@ -7,7 +7,7 @@ title: Главная
 
 <style>
 main {
-  min-height: calc(100svh - 8rem);
+  height: calc(100vh - 12rem);
   background-image: url("/kubstu-building-k-bg.svg");
   background-size: contain;
   background-repeat: no-repeat;
