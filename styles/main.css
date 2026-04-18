@@ -40,20 +40,22 @@ em {
   text-decoration-color: var(--accent);
 }
 .container video, .container img {
+  width: 100%;
   margin-top: 1rem;
   outline: none;
+  border-radius: 1rem;
 }
 
 .header {
   display: flex;
   width: 80ch;
   margin: auto;
+  margin-top: 1rem;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
   background: var(--accent);
-  box-shadow: 0 0 0 100vw var(--accent);
-  clip-path: inset(0 -100vw);
+  border-radius: 1rem;
   color: white;
 }
 .header a {
