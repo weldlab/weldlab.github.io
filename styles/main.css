@@ -1,20 +1,30 @@
 :root {
   --accent: #4c70eb;
+  --accent-light: #5e90fc;
+  --bg: black;
+  --fg: #ccc;
 }
 html, body {
   margin: 0;
   padding: 0;
   background: black;
-  color: white;
+  color: var(--fg);
   font-family: monospace;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 h1, h2 {
   font-size: 1.62rem;
+  margin: 0;
+  color: white;
 }
 a {
-  color: var(--accent);
+  color: inherit;
   text-decoration: underline;
+}
+em {
+  color: var(--accent-light);
 }
 
 .container {
@@ -22,16 +32,51 @@ a {
   margin: auto;
   padding: 1rem;
 }
+.container h1, h2 {
+  text-decoration: underline;
+  text-decoration-color: var(--accent-light);
+}
+.container a {
+  text-decoration-color: var(--accent);
+}
+.container video, .container img {
+  margin-top: 1rem;
+  outline: none;
+}
 
 .header {
   display: flex;
+  width: 80ch;
+  margin: auto;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 1.62rem;
+  padding: 1rem;
   background: var(--accent);
   box-shadow: 0 0 0 100vw var(--accent);
   clip-path: inset(0 -100vw);
+  color: white;
 }
 .header a {
-  color: white;
+  color: inherit;
+}
+.header__links {
+  display: flex;
+  align-items: center;
+  gap: 3ch;
+}
+.header__icon,
+.header__icon * {
+  display: inline-flex;
+  gap: 0.6ch;
+  align-items: center;
+  text-decoration: none;
+  height: 1.6rem;
+}
+.header__icon {
+  background: black;
+  padding: 0.6rem;
+  border-radius: 0.6rem;
+}
+.header__icon:hover {
+  outline: 0.1rem solid var(--fg);
 }
