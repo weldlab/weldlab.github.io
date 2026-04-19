@@ -11,7 +11,9 @@
     <header class="header">
       <h1>{{ title if title else page.fileSlug }}</h1>
       <div class="header__links">
-        <a href="/">Главная</a>
+        {% if page.fileSlug %}
+          <a href="/">Главная</a>
+        {% endif %}
         {# <a href="/about">О нас</a> #}
         <a href="/license" class="header__icon">
           <img src="/icons/creative-commons/cc.svg" alt="CC">
