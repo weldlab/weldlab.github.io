@@ -14,6 +14,10 @@ title: ИМРК - идея
 
 <video src="/video/omni.mp4" controls loop></video>
 
+## Набросок
+Это интерактивная 3D модель, ее можно вращать
+<iframe height="450" src="/imrk-model"></iframe>
+
 ## Пример резки металла
 <video src="/video/imrk-0.mp4" controls></video>
 

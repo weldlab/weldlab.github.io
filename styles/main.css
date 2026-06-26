@@ -42,11 +42,12 @@ em {
 .container a {
   text-decoration-color: var(--accent);
 }
-.container video, .container img {
+.container video, .container img, .container iframe {
   width: 100%;
   margin-top: 1rem;
   outline: none;
   border-radius: 1rem;
+  border: none;
 }
 
 .header {
